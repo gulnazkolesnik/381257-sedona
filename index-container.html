@@ -36,17 +36,18 @@
               <form action="#" method="post"> 
               <div class="structure">
                   <form action="#" method="get"></form>
-                  <p>Инфраструктура:</p>
-                  <input type="checkbox" name="pool" checked>Бассейн<br>
-                  <input type="checkbox" name="parking">Парковка<br>
-                  <input type="checkbox" name="network">Wi-Fi<br>
+                  <label>Инфраструктура:
+                      <input type="checkbox" name="pool" checked>Бассейн<br>
+                      <input type="checkbox" name="parking">Парковка<br>
+                      <input type="checkbox" name="network">Wi-Fi<br>
+                  </label>
               </div>
               <div class="type-home">
                   <form action="#" method="get">
-                  <p>Тип жилья:</p>
-                  <input type="checkbox" name="hotel" checked>Гостиница<br>
-                  <input type="checkbox" name="motel" checked>Мотель<br>
-                  <input type="checkbox" name="apart" checked>Апартаменты<br>
+                      <label>Тип жилья:
+                          <input type="checkbox" name="hotel" checked>Гостиница<br><input type="checkbox" name="motel" checked>Мотель<br>
+                          <input type="checkbox" name="apart" checked>Апартаменты<br>
+                      </label>
                   </form>
               </div>
               <div class="cost">
@@ -62,8 +63,15 @@
               </div>
               
           <div class="result">
-              <h2><!--Результаты поиска. Делать формами?-->
-              </h2>
+              <h2>Найдено:3</h2>
+              <form action="#" method="get">
+                  <label>
+                      Сортировка:
+                      <input type="radio" name="result-sort" value="cost" checked>По цене
+                      <input type="radio" name="result-sort" value="type">По типу
+                      <input type="radio" name="result-sort" value="rating">По рейтингу
+                  </label>
+              </form>              
               
           </div>
           <div class="find-hotel">
