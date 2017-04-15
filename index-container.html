@@ -33,47 +33,49 @@
       
       <main class="container">
           <div class="search-hotel">
-              <form action="#" method="post"> 
-              <div class="structure">
-                  <form action="#" method="get"></form>
-                  <label>Инфраструктура:
-                      <input type="checkbox" name="pool" checked>Бассейн<br>
-                      <input type="checkbox" name="parking">Парковка<br>
-                      <input type="checkbox" name="network">Wi-Fi<br>
-                  </label>
-              </div>
-              <div class="type-home">
-                  <form action="#" method="get">
-                      <label>Тип жилья:
-                          <input type="checkbox" name="hotel" checked>Гостиница<br><input type="checkbox" name="motel" checked>Мотель<br>
-                          <input type="checkbox" name="apart" checked>Апартаменты<br>
+              <form action="#" method="get"> 
+                  <div class="structure"><span class="search-hotel-title">Инфраструктура:</span>
+                      <label>
+                          <input type="checkbox" name="pool" checked>Бассейн
                       </label>
-                  </form>
-              </div>
-              <div class="cost">
-                  <form action="#" method="post">
-                      <label>Стоимость в сутки(Р):
-                          <input type="text" name="total" value="" placeholder="от 0">
-                          <input type="text" name="all-total" value="" placeholder="до 3000">
+                      <label>
+                          <input type="checkbox" name="parking">Парковка
                       </label>
-                  </form>
+                      <label>
+                          <input type="checkbox" name="network">Wi-Fi
+                      </label>
+                  </div>
+                  <div class="type-home">
+                      <span class="search-hotel-title">Тип жилья:</span>
+                      <label>
+                          <input type="checkbox" name="hotel" checked>Гостиница
+                      </label>
+                      <label>
+                          <input type="checkbox" name="motel" checked>Мотель
+                      </label>
+                      <label>
+                          <input type="checkbox" name="apart" checked>Апартаменты
+                      </label>
+                  </div>
+                  <div class="cost">
+                      <span class="search-hotel-title">Стоимость в сутки(Р):</span>
+                      <input type="text" name="total" value="" placeholder="от 0">
+                      <input type="text" name="all-total" value="" placeholder="до 3000"> 
                   </div>
                   <input type="submit" value="Показать">
               </form>
-              </div>
+          </div>
               
           <div class="result">
               <h2>Найдено:3</h2>
-              <form action="#" method="get">
-                  <label>
-                      Сортировка:
-                      <input type="radio" name="result-sort" value="cost" checked>По цене
-                      <input type="radio" name="result-sort" value="type">По типу
-                      <input type="radio" name="result-sort" value="rating">По рейтингу
-                  </label>
-              </form>              
-              
+              <div class="result-sort">
+                  <p class="result-sort-title">Сортировка:</p>
+                  <a class="result-sort-type" href="#">По цене</a>
+                  <a class="result-sort-type" href="#">По типу</a>
+                  <a class="result-sort-type" href="#">По рейтингу</a>
+              </div>
           </div>
+          
           <div class="find-hotel">
               <div class="catalog-hotel">
                   <img src="#" alt="Amara resort spa">
@@ -82,7 +84,7 @@
                   <p>от 4000 р.</p>
                   <a class="btn" href="#">Подробнее</a>
                   <a class="btn" href="#">Забронировать</a>
-                  <a class="btn" href="#">Рейтинг:8.5</a>
+                  <span class="hotel-rating">Рейтинг:8.5</span>
                   
               </div>
               <div class="catalog-hotel">
@@ -92,7 +94,7 @@
                   <p>от 3000 р.</p>
                   <a class="btn" href="#">Подробнее</a>
                   <a class="btn" href="#">Забронировать</a>
-                  <a class="btn" href="#">Рейтинг:8.9</a>
+                  <span class="hotel-rating">Рейтинг:8.9</span>
               </div>
               <div class="catalog-hotel">
                   <img src="#" alt="Villas">
@@ -101,11 +103,10 @@
                   <p>от 2000 р.</p>
                   <a class="btn" href="#">Подробнее</a>
                   <a class="btn" href="#">Забронировать</a>
-                  <a class="btn" href="#">Рейтинг:9.2</a>
+                  <span class="hotel-rating">Рейтинг:9.2</span>
               </div>
           </div>
-          
-      </main>
+     </main>
       <footer class="main-footer">
           <div class="container">
               <div class="footer-insta">
