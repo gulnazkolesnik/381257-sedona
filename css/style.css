@@ -1,0 +1,21 @@
+body {
+    font-size: 14px;
+    line-height: 26px;
+    color: black;
+    font-weight: bold;
+    font-family: "PTSans";   
+}
+h2 .info-tourist-title {
+    font-size: 21px;
+    line-height: 21px;
+    color: black;
+    font-weight: bold;
+    font-family:"PTSans";   
+}
+div .result-sort-title {
+    font-size: 12px;
+    line-height: 18px;
+    color: #81b3d2;
+    font-weight: normal;
+    font-family: "PTSans";
+}
