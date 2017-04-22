@@ -144,7 +144,10 @@ a .main-right {
     position: relative;
     min-height: 600px;
     width: 1200px;
-    background-image: url(/img/main_pictures/map.jpg)
+    background-image: url(/img/main_pictures/map.jpg);
+    background-color: #f2f1ef;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
 .search {
     position: absolute;
@@ -189,7 +192,10 @@ height: 398px;
 .search-hotel {
     width: 1200px;
     min-height: 219px;
-    background-image: url(/img/background/background_hotels.jpg)
+    background-image: url(/img/background/background_hotels.jpg);
+    background-color: #3a4851;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
 .structure {
     float: left;
