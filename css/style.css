@@ -1,9 +1,18 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+}
 body {
     font-size: 14px;
     line-height: 26px;
     color: black;
     font-weight: bold;
-    font-family: "PTSans Bold", "Arial", sans-serif;   
+    font-family: "PTSans", "Arial", sans-serif;   
 }
 h2 .info-tourist-title {
     font-size: 21px;
@@ -15,5 +24,134 @@ div .result-sort-title {
     line-height: 18px;
     color: #81b3d2;
     font-weight: normal;
-    font-family: "PTSans Regular", "Arial", sans-serif;;
+    font-family: "PTSans", "Arial", sans-serif;
+}
+
+.container {
+    width: 1280px;
+    padding: 0 40px;
+    margin: 0 auto;
+    background-color: blue;
+}
+.main-navigation {
+    min-height: 57px;
+    width: 1200px;
+    padding: 0 73px;
+    background-color: red;
+    
+}
+.main-picture {
+    width: 1200px;
+    height: 510px;
+    margin-bottom: 63,5px;
+    background-color: yellow;
+}
+.info {
+    width: 1200px;
+    height: 218px;
+    background-color: deepskyblue;
+    padding-top: 65px;
+    padding-left: 282px;
+    padding-right: 282px;
+    margin-bottom: 51px;
+    }
+
+
+.features-one {
+    float:left;
+    width: 308px;
+    height: 256px;
+    background-color: gold;
+    padding: 50px 46px 40px 46px;
+}
+
+.pictures1 {
+    float:right;
+    width: 800px;
+    height: 256px;
+    background-color: goldenrod;
+    margin-right: 0;
+    margin-left: 0;
+    
+}
+.features1 {
+    margin-bottom: 60px;}
+
+.info-tourist {
+    padding-left: 73px;
+    padding-right: 50px;
+    padding-top: 60px;
+    padding-bottom: 84,5px;
+}
+.info-tourist-home {
+    float:left;
+    width: 300px;
+    margin-right: 59px;
+    
+}
+.info-tourist-food {
+    float:left;
+    width: 300px;
+    margin-right: 59px;
+    
+}
+.info-tourist-souvenirs {
+    float:right;
+    width: 300px;
+}
+.pictures2 {
+    float:left;
+    width: 800px;
+    height: 256px;
+    background-color: goldenrod;
+    margin-right: 0;
+    margin-left: 0;
+}
+.features-two {
+    float: right;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 49px;
+    padding-bottom: 41px;
+    background-color: azure;
+    
+}
+.features-three {
+    float:left;
+    width: 290px;
+    padding-left: 73px;
+    margin-right: 88px;
+    background-color: fuchsia;
+    
+    
+}
+.features-four {
+    padding-left: 55px;
+    margin-right: 55px;
+    float:left;
+    width: 290px;
+    background-color: darkgreen;
+    
+}
+.features-five {
+    float:right;
+    width: 270px;
+    margin-right: 55px;
+    background-color: firebrick;
+    
+}
+.features {
+    margin-bottom: 51px;
+    background-color: brown;}
+
+}
+.interest {
+    background-color: indigo;
+}
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
 }
