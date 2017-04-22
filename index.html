@@ -6,33 +6,32 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+      <div class="container">
       <header class="main-header">
-          <div class="container">
           <nav class="main-navigation">
               <ul>
                   <li>
-                      <a href="#">Информация</a>
+                      <a class="main-left" href="#">Информация</a>
                   </li>
                   <li>
-                      <a href="#">Фото и Видео</a>
+                      <a class="main-left" href="#">Фото и Видео</a>
                   </li>
                   <li>
-                      <a href="#">Карта штата</a>
+                      <a class="main-right" href="#">Карта штата</a>
                   </li>
                   <li>
-                      <a href="#">Гостиницы</a>
+                      <a class="main-right" href="index-container.html">Гостиницы</a>
                   </li>
               </ul>
           </nav>
-            </div>
           <div class="logo">
               <a href="#">
-                  <img src="#" alt="City of sedona">
+                  <img src="img/decor/logo.png" width="138" height="70" alt="City of sedona">
               </a>
           </div>
       </header>
       
-      <main class="container">
+      <main>
           <div class= "main-picture">
               <img src="img/main_pictures/welcome_sedonia.jpg" alt="Welcome to the gorgeous Sedona">
           </div>
@@ -56,15 +55,15 @@
                   </div>
               </div>
               <section class="info-tourist clearfix">
-                  <div class="info-tourist-home">
+                  <div class="info-tourist-name">
                       <h2 class="info-tourist-title">Жилье</h2>
                       <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                   </div>
-                  <div class="info-tourist-food">
+                  <div class="info-tourist-name">
                       <h2 class="info-tourist-title">Еда</h2>
                       <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
                   </div>
-                  <div class="info-tourist-souvenirs">
+                  <div class="info-tourist-name">
                       <h2 class="info-tourist-title">Сувениры</h2>
                       <p>Не только китайского, но и местного производства!</p>
                   </div>
@@ -101,10 +100,12 @@
                   <div class="interest-title">
                       <b class="interest-name">Заинтересовались?</b>          
                   </div>
-                  <p>Укажите предполагаемые даты, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+                  <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
                   <a class="interest-search" href="#">Поиск гостиницы в Седоне</a>
               </div>
-          <div class="search">
+        
+          <div class= "map">
+            <div class="search">
               <form class="search-form" action="#" method="get">
                   <label>
                       Дата заезда <input type="text" name="date-arrival" value="arrival">
@@ -121,12 +122,10 @@
                   <input type="submit" value="Найти">
               </form>
           </div>
-          <div class= "map">
-              <img src="img/main_pictures/map.jpg" width="1200" height="593" alt="Карта">
+              
           </div>
       </main>
-      <footer class="main-footer">
-          <div class="container">
+      <footer class="main-footer clearfix">
               <div class="footer-insta">
                   <a href="#">#VISITSEDONA</a>
               </div>
@@ -136,9 +135,10 @@
                   <a class="footer-social-youtube" href="#">Youtube</a>
               </div>
               <div class="footer-copyright">
-                  <span class="site">website by</span> <a href="https://htmlacademy.ru/intensive/htmlcss"></a>
+                  <span class="site">website by</span> <a href="https://htmlacademy.ru/intensive/htmlcss">
+                  <img src="img/decor/logo%20html.png" width="113" height="39"> </a>
               </div>
-          </div>
-      </footer>
+          </footer>
+      </div>
     </body>
 </html>

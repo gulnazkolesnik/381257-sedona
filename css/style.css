@@ -7,12 +7,21 @@
 html {
     box-sizing: border-box;
 }
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
 body {
     font-size: 14px;
     line-height: 26px;
     color: black;
     font-weight: bold;
-    font-family: "PTSans", "Arial", sans-serif;   
+    font-family: "PTSans", "Arial", sans-serif;
+    padding: 0 40px;
+    text-align: center;
+    text-transform: uppercase;
 }
 h2 .info-tourist-title {
     font-size: 21px;
@@ -28,130 +37,221 @@ div .result-sort-title {
 }
 
 .container {
-    width: 1280px;
-    padding: 0 40px;
+    width: 1200px;
     margin: 0 auto;
     background-color: blue;
+    
 }
-.main-navigation {
-    min-height: 57px;
+.main-header {
+    position: relative;
     width: 1200px;
-    padding: 0 73px;
+    min-height: 57px;
     background-color: red;
     
 }
+.main-navigation {
+    width: 1200px;
+    min-height: 57px;
+    padding-top: 22.5px;
+    
+}
+.main-navigation li {
+    display: inline-block;
+    width: 20%;
+    min-height: 57px;
+}
+a .main-left {
+    text-align: left;
+}
+a .main-right {
+    text-align: right;
+}
+.logo {
+    position: absolute;
+    width: 138px;
+    min-height: 70px;
+}
 .main-picture {
     width: 1200px;
-    height: 510px;
-    margin-bottom: 63,5px;
+    min-height: 571px;
     background-color: yellow;
 }
 .info {
     width: 1200px;
-    height: 218px;
-    background-color: deepskyblue;
-    padding-top: 65px;
-    padding-left: 282px;
-    padding-right: 282px;
-    margin-bottom: 51px;
+    min-height: 217px;
+    background-color: white;
     }
 
 
-.features-one {
+.features-one, .features-two {
     float:left;
-    width: 308px;
-    height: 256px;
-    background-color: gold;
+    width: 400px;
+    min-height: 256px;
+    background-color: #81b3d2;
     padding: 50px 46px 40px 46px;
 }
 
-.pictures1 {
+.pictures1, .pictures2 {
     float:right;
     width: 800px;
-    height: 256px;
+    min-height: 256px;
     background-color: goldenrod;
-    margin-right: 0;
-    margin-left: 0;
+    
     
 }
-.features1 {
-    margin-bottom: 60px;}
 
-.info-tourist {
+.info-tourist-name {
+    float:left;
+    width: 400px;
     padding-left: 73px;
     padding-right: 50px;
     padding-top: 60px;
-    padding-bottom: 84,5px;
-}
-.info-tourist-home {
-    float:left;
-    width: 300px;
-    margin-right: 59px;
+    padding-bottom: 84.5px;
+    
     
 }
-.info-tourist-food {
-    float:left;
-    width: 300px;
-    margin-right: 59px;
-    
-}
-.info-tourist-souvenirs {
-    float:right;
-    width: 300px;
-}
-.pictures2 {
-    float:left;
-    width: 800px;
-    height: 256px;
-    background-color: goldenrod;
-    margin-right: 0;
-    margin-left: 0;
-}
-.features-two {
-    float: right;
-    padding-left: 48px;
-    padding-right: 48px;
-    padding-top: 49px;
-    padding-bottom: 41px;
-    background-color: azure;
-    
-}
+
 .features-three {
     float:left;
-    width: 290px;
-    padding-left: 73px;
-    margin-right: 88px;
-    background-color: fuchsia;
+    width: 400px;
+    min-height: 257px;
+    background-color: darkgrey;
     
     
 }
 .features-four {
-    padding-left: 55px;
-    margin-right: 55px;
     float:left;
-    width: 290px;
-    background-color: darkgreen;
+    width: 400px;
+    min-height: 257px;
+    background-color: darkgrey;
+    
     
 }
 .features-five {
     float:right;
-    width: 270px;
-    margin-right: 55px;
-    background-color: firebrick;
+    width: 400px;
+    min-height: 257px;
+    background-color: darkgrey;
     
 }
-.features {
-    margin-bottom: 51px;
-    background-color: brown;}
 
-}
 .interest {
-    background-color: indigo;
+    width: 1200px;
+    height: 291px;
+    background-color: white;
+}
+.map {
+    position: relative;
+    min-height: 600px;
+    width: 1200px;
+    background-image: url(/img/main_pictures/map.jpg)
+}
+.search {
+    position: absolute;
+height: 398px;
+    width: 576px;
+    top: 54px;
+    right: 58px;
+    bottom: 57px;
+    left: 54.5px;
+}
+.main-footer {
+    width: 1200px;
+    min-height: 126px;
+     background-color: white;
+}
+.footer-insta, .footer-social, .footer-copyright {
+    float: left;
+    width: 400px;
+    min-height: 120px;
+   
+}
+.footer-insta {
+    padding-left: 133.5px;
+    padding-top: 51.5px;
+    padding-bottom: 49.5px;
+    padding-right: 129.5px;
+}
+.footer-social {
+    padding-top: 39px;
+    padding-right: 125px;
+    padding-bottom: 35px;
+    padding-left: 124px;
+    
+}
+.footer-copyright {
+    padding-top: 41px;
+    padding-right: 103px;
+    padding-bottom: 40px;
+    
+    
+}
+.search-hotel {
+    width: 1200px;
+    min-height: 219px;
+    background-image: url(/img/background/background_hotels.jpg)
+}
+.structure {
+    float: left;
+    width: 313px;
+    min-height: 219px;
+    background-color: aqua;
+    padding-left: 75px;
+    padding-right: 101px;
+}
+.type-home {
+    float: left;
+    width: 287px;
+    min-height: 219px;
+    background-color: dimgrey;
+    
+}
+.cost {
+    float: right;
+    width: 600px;
+    min-height: 219px;
+    padding-right: 73px;
+    background-color: aqua;
+    
+}
+.result {
+    width: 1200px;
+    min-height: 86px;
+    display: inline-block;
+    background-color: indianred;
+}
+.find-hotel {
+    width: 1200px;
+    min-height: 450px;
+    background-color: orangered;
+    border-bottom: 1px solid grey;
+    
+}
+.catalog-hotel {
+    width: 1200px;
+    min-height: 150px;
+    background-color: yellowgreen;
+    border-bottom: 1px solid grey;
+    
+}
+.catalog-hotel img {
+    float: left;
+    width: 135px;
+    height: 90px;
+    padding-top: 30px;
+    padding-left: 73px;
+}
+.catalog-hotel-name {
+    float: left;
+    width: 287px;
+    
+    padding-left: 27.5px;
+}
+.hotel-rating {
+    float: right;
+    width: 705px;
+    
+    padding-right: 73px;
+    text-align: right;
 }
 
-.clearfix::after {
-  content: "";
-
-  display: table;
-  clear: both;
-}
