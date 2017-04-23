@@ -51,6 +51,10 @@ div .result-sort-title {
     background-color: red;
     
 }
+.main-navigation ul{
+    margin: 0;
+    
+}
 
 .main-navigation li {
     display: inline-block;
@@ -71,7 +75,7 @@ a .main-right {
 }
 .main-picture {
     width: 1200px;
-    min-height: 571px;
+    height: 564px;
 }
 
 .info {
@@ -80,9 +84,12 @@ a .main-right {
     min-height: 217px;
     background-color: white;
     }
+.info p {
+    margin: 0;
+}
 
 .features-one, .features-two {
-    float:left;
+    float: left;
     width: 400px;
     min-height: 256px;
     background-color: #81b3d2;
@@ -90,10 +97,11 @@ a .main-right {
 }
 
 .pictures1, .pictures2 {
-    float:right;
+    float: right;
     width: 800px;
     min-height: 256px;
     background-color: goldenrod;
+    line-height: 0;
     
     
 }
@@ -132,7 +140,7 @@ a .main-right {
     position: relative;
     min-height: 600px;
     width: 1200px;
-    background-image: url(/img/main_pictures/map.jpg);
+    background-image: url(../img/main_pictures/map.jpg);
     background-color: #f2f1ef;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -180,7 +188,7 @@ height: 398px;
 .search-hotel {
     width: 1200px;
     min-height: 219px;
-    background-image: url(/img/background/background_hotels.jpg);
+    background-image: url(../img/background/background_hotels.jpg);
     background-color: #3a4851;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -189,7 +197,7 @@ height: 398px;
     float: left;
     width: 313px;
     min-height: 219px;
-    background-color: aqua;
+   
     padding-left: 75px;
     padding-right: 101px;
 }
@@ -197,7 +205,7 @@ height: 398px;
     float: left;
     width: 287px;
     min-height: 219px;
-    background-color: dimgrey;
+   
     
 }
 .cost {
@@ -205,7 +213,7 @@ height: 398px;
     width: 600px;
     min-height: 219px;
     padding-right: 73px;
-    background-color: aqua;
+  
     
 }
 .result {
