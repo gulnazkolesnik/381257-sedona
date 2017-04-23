@@ -237,24 +237,23 @@ height: 398px;
     border-bottom: 1px solid grey;
     
 }
-.catalog-hotel img {
+.hotel-picture {
     float: left;
-    width: 135px;
+    width: 209px;
     height: 90px;
-    padding-top: 30px;
-    padding-left: 73px;
+   
 }
 .catalog-hotel-name {
     float: left;
     width: 287px;
+    height: 90px;
     
-    padding-left: 27.5px;
+    
 }
 .hotel-rating {
     float: right;
     width: 705px;
-    
-    padding-right: 73px;
+    height: 90px;
     text-align: right;
 }
 
