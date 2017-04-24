@@ -51,22 +51,16 @@ div .result-sort-title {
     background-color: red;
     
 }
-.main-navigation ul{
-    margin: 0;
-    
-}
+
 
 .main-navigation li {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     width: 20%;
     min-height: 57px;
-     background-color: red;
+    background-color: red;
 }
-a .main-left {
-    text-align: left;
-}
-a .main-right {
-    text-align: right;
+
 }
 .logo {
     position: absolute;
