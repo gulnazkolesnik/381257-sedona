@@ -7,11 +7,7 @@
 html {
     box-sizing: border-box;
 }
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 
 body {
     font-size: 14px;
@@ -51,16 +47,15 @@ div .result-sort-title {
     background-color: red;
     
 }
-
-
-.main-navigation li {
+.main-navigation ul {
     display: flex;
-    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+}
+.main-navigation li {
     width: 20%;
     min-height: 57px;
     background-color: red;
-}
-
 }
 .logo {
     position: absolute;
@@ -74,7 +69,6 @@ div .result-sort-title {
 
 .info {
     width: 1200px;
-
     min-height: 217px;
     background-color: white;
     }
@@ -82,8 +76,14 @@ div .result-sort-title {
     margin: 0;
 }
 
+ .features-pic {
+    display: flex;
+     margin: auto;
+}
+
+
 .features-one, .features-two {
-    float: left;
+    
     width: 400px;
     min-height: 256px;
     background-color: #81b3d2;
@@ -91,7 +91,7 @@ div .result-sort-title {
 }
 
 .pictures {
-    float: left;
+    
     width: 800px;
     min-height: 256px;
     background-color: goldenrod;
@@ -99,28 +99,28 @@ div .result-sort-title {
     
     
 }
-
+.info-tourist {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
 .info-tourist-name {
-    float:left;
     width: 400px;
-    padding-left: 73px;
-    padding-right: 50px;
-    padding-top: 60px;
-    padding-bottom: 84.5px;
-    
+    min-height: 257px;
     
 }
 .features {
+    display: flex;
     width: 1200px;
-    min-height: 257px;
-    
+    margin: auto;
     
 }
 .features-item {
-    float:left;
     width: 400px;
     min-height: 257px;
     background-color: darkgrey;
+    padding-top: 45.5px;
     
     
 }
@@ -141,7 +141,7 @@ div .result-sort-title {
 }
 .search {
     position: absolute;
-height: 398px;
+    min-height: 398px;
     width: 576px;
     top: 54px;
     right: 58px;
@@ -150,12 +150,12 @@ height: 398px;
     background-color: white;
 }
 .main-footer {
-    width: 1200px;
-    min-height: 126px;
+    display: flex;
+    flex-basis: 1200px;
      background-color: white;
+    margin: auto;
 }
 .footer-name {
-    float: left;
     width: 400px;
     min-height: 120px;
    
@@ -188,67 +188,87 @@ height: 398px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
 }
+.search-hotel form {
+    display: flex;
+    flex-basis: 1200px;
+    margin: auto;
+}
 .structure {
-    float: left;
     width: 313px;
-    min-height: 219px;
-   
     padding-left: 75px;
     padding-right: 101px;
 }
 .type-home {
-    float: left;
     width: 287px;
-    min-height: 219px;
    
-    
 }
 .cost {
-    float: right;
-    width: 600px;
-    min-height: 219px;
-    padding-right: 73px;
-  
-    
+    width: 600px; 
+    padding-left: 211px;
 }
 .result {
+    display: flex;
+    margin: 0;
     width: 1200px;
+    justify-content: flex-start;
+    
+    align-items: center;
     min-height: 86px;
-    display: inline-block;
     background-color: indianred;
+}
+.result-sort {
+    display: flex;
+    margin: 0;
+    flex-basis: 1200px;
+    justify-content: sp;
+    align-items: baseline;
+    
+
+    
 }
 .find-hotel {
     width: 1200px;
+    
     min-height: 450px;
     background-color: orangered;
     border-bottom: 1px solid grey;
     
 }
 .catalog-hotel {
-    width: 1200px;
-    min-height: 150px;
-    background-color: yellowgreen;
+    display: flex;
+    flex-basis: 1200px;
+    align-items: center;
+    height: 150px;
+    background-color: white;
     border-bottom: 1px solid grey;
     
 }
+.catalog-hotel:last-child {
+     border-bottom: 0px solid grey;
+}
 .hotel-picture {
-    float: left;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     width: 209px;
-    height: 90px;
+    
    
 }
 .catalog-hotel-name {
-    float: left;
+    font-size: 14px;
     width: 287px;
-    height: 90px;
-    
+    padding-top: 19.5px;
+    padding-bottom: 31px;
     
 }
+
+.hotel-title {
+    font-size: 
+}
 .hotel-rating {
-    float: right;
     width: 705px;
-    height: 90px;
     text-align: right;
+    padding-right: 73px;
 }
 
 
