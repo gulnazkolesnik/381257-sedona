@@ -40,6 +40,14 @@ div .result-sort-title {
     background-color: blue;
     
 }
+.hotels-container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: blue;
+    text-align: left;
+    
+    
+}
 .main-header {
     position: relative;
     width: 1200px;
@@ -50,12 +58,13 @@ div .result-sort-title {
 .main-navigation ul {
     display: flex;
     margin: auto;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .main-navigation li {
     width: 20%;
     min-height: 57px;
     background-color: red;
+    list-style: none;
 }
 .logo {
     position: absolute;
@@ -64,7 +73,7 @@ div .result-sort-title {
 }
 .main-picture {
     width: 1200px;
-    height: 564px;
+    height: 508px;
 }
 
 .info {
@@ -83,10 +92,10 @@ div .result-sort-title {
 
 
 .features-one, .features-two {
-    
     width: 400px;
     min-height: 256px;
     background-color: #81b3d2;
+    text-align: center;
     padding: 50px 46px 40px 46px;
 }
 
@@ -107,7 +116,7 @@ div .result-sort-title {
 }
 .info-tourist-name {
     width: 400px;
-    min-height: 257px;
+    min-height: 330px;
     
 }
 .features {
@@ -132,7 +141,7 @@ div .result-sort-title {
 }
 .map {
     position: relative;
-    min-height: 600px;
+    min-height: 474px;
     width: 1200px;
     background-image: url(../img/main_pictures/map.jpg);
     background-color: #f2f1ef;
@@ -180,6 +189,7 @@ div .result-sort-title {
     
     
 }
+
 .search-hotel {
     width: 1200px;
     min-height: 219px;
@@ -194,15 +204,20 @@ div .result-sort-title {
     margin: auto;
 }
 .structure {
+    display: flex;
+    flex-direction: column;
     width: 313px;
     padding-left: 75px;
     padding-right: 101px;
 }
 .type-home {
+    display: flex;
+    flex-direction: column;
     width: 287px;
    
 }
 .cost {
+    
     width: 600px; 
     padding-left: 211px;
 }
@@ -211,7 +226,7 @@ div .result-sort-title {
     margin: 0;
     width: 1200px;
     justify-content: flex-start;
-    
+    padding-left: 75px;
     align-items: center;
     min-height: 86px;
     background-color: indianred;
@@ -220,8 +235,10 @@ div .result-sort-title {
     display: flex;
     margin: 0;
     flex-basis: 1200px;
-    justify-content: sp;
+    justify-content: space-between;
     align-items: baseline;
+    padding-right: 608px;
+    padding-left: 48px;
     
 
     
@@ -239,6 +256,7 @@ div .result-sort-title {
     flex-basis: 1200px;
     align-items: center;
     height: 150px;
+  
     background-color: white;
     border-bottom: 1px solid grey;
     
@@ -255,16 +273,26 @@ div .result-sort-title {
    
 }
 .catalog-hotel-name {
+    
     font-size: 14px;
     width: 287px;
     padding-top: 19.5px;
     padding-bottom: 31px;
     
 }
-
-.hotel-title {
-    font-size: 
+/*.hotel-title-info {
+    display: flex;
+    margin: auto;
 }
+.first-row {
+    width: 110px;
+    min-height: 106px;
+}
+.second-row {
+    width: 142px;
+    min-height: 106px;
+}*/
+
 .hotel-rating {
     width: 705px;
     text-align: right;
