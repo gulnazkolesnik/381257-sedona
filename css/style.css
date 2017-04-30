@@ -11,14 +11,200 @@ html {
 
 body {
     font-size: 14px;
-    line-height: 26px;
+    line-height: 21px;
     color: black;
-    font-weight: bold;
+    min-width: 1200px;
+    font-weight: normal;
     font-family: "PTSans", "Arial", sans-serif;
-    padding: 0 40px;
+    padding: 0;
+    margin: 0;
     text-align: center;
     text-transform: uppercase;
-    font-family: "PTSans", "Arial", sans-serif;
+}
+.sprite {
+    background-image: url(../img/decor/sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-_-_ {
+    width: 42px;
+    height: 17px;
+    background-position: -10px -10px;
+}
+
+.sprite-_-_-_ {
+    width: 65px;
+    height: 17px;
+    background-position: -10px -47px;
+}
+
+.sprite-_-_-_-_ {
+    width: 89px;
+    height: 17px;
+    background-position: -10px -84px;
+}
+
+.sprite-calendar_navedenie {
+    width: 21px;
+    height: 22px;
+    background-position: -10px -121px;
+}
+
+.sprite-calendar_nazhatie {
+    width: 21px;
+    height: 22px;
+    background-position: -10px -163px;
+}
+
+.sprite-calendar_pokoi {
+    width: 21px;
+    height: 22px;
+    background-position: -10px -205px;
+}
+
+.sprite-check {
+    width: 26px;
+    height: 22px;
+    background-position: -10px -247px;
+}
+
+.sprite-check_block {
+    width: 26px;
+    height: 22px;
+    background-position: -10px -289px;
+}
+
+.sprite-down-pokoi {
+    width: 11px;
+    height: 10px;
+    background-position: -10px -331px;
+}
+
+.sprite-down_navedenie {
+    width: 11px;
+    height: 10px;
+    background-position: -10px -361px;
+}
+
+.sprite-down_nazhatie {
+    width: 11px;
+    height: 10px;
+    background-position: -10px -391px;
+}
+
+.sprite-facebook {
+    width: 10px;
+    height: 19px;
+    background-position: -10px -421px;
+}
+
+.sprite-food {
+    width: 74px;
+    height: 70px;
+    background-position: -10px -460px;
+}
+
+.sprite-home {
+    width: 75px;
+    height: 72px;
+    background-position: -10px -550px;
+}
+
+.sprite-kvadrat {
+    width: 22px;
+    height: 22px;
+    background-position: -10px -642px;
+}
+
+.sprite-kvadrat_block {
+    width: 22px;
+    height: 22px;
+    background-position: -10px -684px;
+}
+
+.sprite-logo {
+    width: 138px;
+    height: 70px;
+    background-position: -10px -726px;
+}
+
+.sprite-logo-html {
+    width: 113px;
+    height: 39px;
+    background-position: -10px -816px;
+}
+
+.sprite-minus_navedenie {
+    width: 12px;
+    height: 3px;
+    background-position: -10px -875px;
+}
+
+.sprite-minus_nazhatie {
+    width: 12px;
+    height: 3px;
+    background-position: -10px -898px;
+}
+
+.sprite-minus_pokoi {
+    width: 12px;
+    height: 3px;
+    background-position: -10px -921px;
+}
+
+.sprite-plus_navedenie {
+    width: 11px;
+    height: 11px;
+    background-position: -10px -944px;
+}
+
+.sprite-plus_nazhatie {
+    width: 11px;
+    height: 11px;
+    background-position: -10px -975px;
+}
+
+.sprite-plus_pokoi {
+    width: 11px;
+    height: 11px;
+    background-position: -10px -1006px;
+}
+
+.sprite-souvenirs {
+    width: 64px;
+    height: 76px;
+    background-position: -10px -1037px;
+}
+
+.sprite-twitter {
+    width: 17px;
+    height: 15px;
+    background-position: -10px -1133px;
+}
+
+.sprite-up-nazhatie {
+    width: 11px;
+    height: 10px;
+    background-position: -10px -1168px;
+}
+
+.sprite-up_navedenie {
+    width: 11px;
+    height: 10px;
+    background-position: -10px -1198px;
+}
+
+.sprite-up_pokoi {
+    width: 11px;
+    height: 10px;
+    background-position: -10px -1228px;
+}
+
+.sprite-youtube {
+    width: 20px;
+    height: 16px;
+    background-position: -10px -1258px;
 }
 h2 .info-tourist-title {
     font-size: 21px;
@@ -36,58 +222,90 @@ div .result-sort-title {
 
 .container {
     width: 1200px;
-    margin: 0 auto;
     background-color: blue;
     
 }
 .hotels-container {
     width: 1200px;
-    margin: 0 auto;
     background-color: blue;
-    text-align: left;
-    
-    
+    text-align: left;   
 }
 .main-header {
     position: relative;
     width: 1200px;
     min-height: 57px;
-    background-color: red;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    line-height: 26px;
     
 }
 .main-navigation ul {
     display: flex;
-    margin: auto;
+    margin: 0;
+    padding: 0;
     justify-content: space-between;
+   
 }
 .main-navigation li {
     width: 20%;
     min-height: 57px;
-    background-color: red;
+    background-color: white;
+    color: black;
     list-style: none;
+    padding-top: 16px;
+}
+.main-navigation a {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+   
 }
 .logo {
     position: absolute;
     width: 138px;
     min-height: 70px;
+    left: 531px;
 }
 .main-picture {
     width: 1200px;
     height: 508px;
+    padding-top: 73px;
+    background-image: url(../img/background/SEDONA_BACK.jpg);
+    background-color: #467da6;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
 }
 
 .info {
     width: 1200px;
     min-height: 217px;
     background-color: white;
+    
     }
+.info-city {
+    padding-left: 282px;
+     padding-top: 65px;
+    padding-right: 282px;
+    padding-bottom: 30px;
+    
+}
+.info-name {
+    font-size: 21px;
+    line-height: 26px;   
+}
 .info p {
     margin: 0;
+    font-size: 14px;
+    line-height: 26px; 
+    padding-left: 354px;
+    padding-right: 355px;
 }
 
  .features-pic {
     display: flex;
-     margin: auto;
+     padding: 0;
 }
 
 
@@ -95,8 +313,28 @@ div .result-sort-title {
     width: 400px;
     min-height: 256px;
     background-color: #81b3d2;
-    text-align: center;
-    padding: 50px 46px 40px 46px;
+    color: #ffffff;
+    text-align: center;   
+}
+.features-name {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+    display: block;
+    padding-top: 75px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-bottom: 32px;
+}
+.features-number {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+}
+.features-one p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
 }
 
 .pictures {
@@ -110,34 +348,129 @@ div .result-sort-title {
 }
 .info-tourist {
     display: flex;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
+    background-color: white;
+    color: black;
+   
 }
 .info-tourist-name {
+    position: relative;
     width: 400px;
-    min-height: 330px;
+    min-height: 330px; 
+    padding-top: 144px;
+    padding-left: 164px;
+    padding-left: 55px;
+    padding-right: 50px;
+}
+.info-tourist-title {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 21px;
+    padding: 0;
     
+}
+.info-tourist-name::before {
+    background: transparent url("../img/decor/sprite.png") no-repeat;
+  
+}
+.home::before {
+    content: "";
+    width: 75px;
+    height: 72px;
+    position: absolute;
+    top: 61px;
+    left: 164px;
+    background-position: -10px -550px;
+}
+.food::before {
+    content: "";
+    width: 74px;
+    height: 70px;
+    position: absolute;
+    top: 61px;
+    left: 164px;
+     background-position: -10px -460px
+}
+.souvenirs::before {
+    content: "";
+    position: absolute;
+    top: 61px;
+    left: 164px;
+    width: 64px;
+    height: 76px;
+    background-position: -10px -1037px;
+}
+    
+.info-tourist-name p {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+    padding-top: 5px;
 }
 .features {
     display: flex;
     width: 1200px;
-    margin: auto;
+    padding: 0;
     
 }
 .features-item {
     width: 400px;
     min-height: 257px;
-    background-color: darkgrey;
-    padding-top: 45.5px;
-    
-    
+    background-color: #eeeeee;
+    color: #333333;
+    padding-left: 96px;
+    padding-right: 97px;
+    padding-bottom: 64px;
 }
+/*.features-item .features-name {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 21px;
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    text-align: center;
+}
+
+.features-item p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+}*/
 
 .interest {
     width: 1200px;
     height: 291px;
     background-color: white;
+    color: black;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+}
+.interest-title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 24px;
+    padding-top: 93px;
+    padding-left: 452px;
+    padding-right: 452px;
+    padding-bottom: 38px;
+}
+.interest-search {
+    background-color: #766357;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    text-decoration: none;
+    display:inline-block;
+    padding: 30px 120px;
+    vertical-align: top;
+    text-align: center;
+    margin-bottom: 0;
 }
 .map {
     position: relative;
@@ -152,17 +485,71 @@ div .result-sort-title {
     position: absolute;
     min-height: 398px;
     width: 576px;
-    top: 54px;
-    right: 58px;
-    bottom: 57px;
-    left: 54.5px;
+    top: 0px;
+    left: 310px;
     background-color: white;
+    
+}
+.search-form {
+    padding-top: 55px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.search-form input {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-family: "PT SANS", "Arial", sans-serif;
+    background-color: #f2f2f2;
+    color:#000000;
+    border: none;
+    width: 348px;
+    height: 35px;
+    padding-left: 13px;
+    padding-right: 54px;
+    margin-bottom: 31px;
+    margin-left: 18px;
+    position: relative;
+    display: inline-block;
+    
+    
+}
+.search-form input::after {
+    content: "";
+    width: 21px;
+    height: 22px;
+    background: red;
+    position: absolute;
+    top: 8px;
+    left: 317px;
+
+    
+}
+.search-form input:nth-child(3) {
+    max-width: 119px;
+    margin: 0;
+}
+
+.search-form input:hover {
+    background-color: #ebebeb;
+    color: black;
+    border: none;
+}
+.search-form input:focus {
+    background-color: #ffffff;
+    color: black;
+    border: 2px solid #e5e5e5;
 }
 .main-footer {
     display: flex;
     flex-basis: 1200px;
      background-color: white;
-    margin: auto;
 }
 .footer-name {
     width: 400px;
@@ -185,8 +572,7 @@ div .result-sort-title {
 .footer-copyright {
     padding-top: 41px;
     padding-right: 103px;
-    padding-bottom: 40px;
-    
+    padding-bottom: 40px;  
     
 }
 
@@ -201,7 +587,6 @@ div .result-sort-title {
 .search-hotel form {
     display: flex;
     flex-basis: 1200px;
-    margin: auto;
 }
 .structure {
     display: flex;
@@ -233,11 +618,10 @@ div .result-sort-title {
 }
 .result-sort {
     display: flex;
-    margin: 0;
-    flex-basis: 1200px;
+    flex-basis: 909px;
     justify-content: space-between;
     align-items: baseline;
-    padding-right: 608px;
+    padding-right: 504px;
     padding-left: 48px;
     
 
@@ -255,7 +639,7 @@ div .result-sort-title {
     display: flex;
     flex-basis: 1200px;
     align-items: center;
-    height: 150px;
+    min-height: 150px;
   
     background-color: white;
     border-bottom: 1px solid grey;
@@ -275,23 +659,20 @@ div .result-sort-title {
 .catalog-hotel-name {
     
     font-size: 14px;
-    width: 287px;
+    width: 300px;
     padding-top: 19.5px;
-    padding-bottom: 31px;
+    padding-left: 32px;
     
 }
-/*.hotel-title-info {
-    display: flex;
-    margin: auto;
+.hotel-room {
+    display: inline-block;
+    width: 118px;
+
 }
-.first-row {
-    width: 110px;
-    min-height: 106px;
+.cost-room {
+    display: inline-block;
+    
 }
-.second-row {
-    width: 142px;
-    min-height: 106px;
-}*/
 
 .hotel-rating {
     width: 705px;

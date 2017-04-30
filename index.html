@@ -4,11 +4,16 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
       <link rel="stylesheet" href="css/normalize.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic">
       <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
       <div class="container">
       <header class="main-header">
+           <div class="logo">
+              <a href="#">
+                  <img src="img/decor/logo.png" width="138" height="70" alt="City of sedona"></a>
+          </div>
           <nav class="main-navigation">
               <ul>
                   <li>
@@ -26,10 +31,7 @@
               </ul>
               
           </nav>
-          <div class="logo">
-              <a href="#">
-                  <img src="img/decor/logo.png" width="138" height="70" alt="City of sedona"></a>
-          </div>
+         
           
           </header>
 
@@ -37,7 +39,7 @@
 
 
           <div class= "main-picture">
-              <img src="img/main_pictures/welcome_sedonia.jpg" width="1200" height="508" alt="Welcome to the gorgeous Sedona">
+              <img src="img/main_pictures/SEDONA.png" width="458" height="352" alt="Welcome to the gorgeous Sedona">
           </div>
               
           
@@ -60,15 +62,15 @@
               </div>
               <section class="info-tourist">
 
-                  <div class="info-tourist-name">
+                  <div class="info-tourist-name home">
                       <h2 class="info-tourist-title">Жилье</h2>
                       <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                   </div>
-                  <div class="info-tourist-name">
+                  <div class="info-tourist-name food">
                       <h2 class="info-tourist-title">Еда</h2>
                       <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
                   </div>
-                  <div class="info-tourist-name">
+                  <div class="info-tourist-name souvenirs">
 
                       <h2 class="info-tourist-title">Сувениры</h2>
                       <p>Не только китайского, но и местного производства!</p>
@@ -116,16 +118,16 @@
 
               <form class="search-form" action="#" method="get">
                   <label>
-                      Дата заезда <input type="text" name="date-arrival" value="arrival">
+                      Дата заезда <input type="text" name="date-arrival" value="24 апреля 2017">
                   </label>
                   <label>
-                      Дата выезда <input type="text" name="date-departure" value="departure">
+                      Дата выезда <input type="text" name="date-departure" value="4 июля 2017">
                   </label>
                   <label>
-                      Взрослые <input type="text" name="total-adults" value="adults">
+                      Взрослые <input type="text" name="total-adults" value="2">
                   </label>
                   <label>
-                      Дети <input type="text" name="total-children" value="children">
+                      Дети <input type="text" name="total-children" value="0">
                   </label>
                   <input type="submit" value="Найти">
               </form>
