@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
       <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic">
       <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-      <div class="hotels-container">
+      <div class="container">
       <header class="main-header">
           <nav class="main-navigation">
               <ul>
@@ -20,8 +21,8 @@
                   <li>
                       <a href="#">Карта штата</a>
                   </li>
-                  <li>
-                      <a href="#">Гостиницы</a>
+                  <li class="active">
+                      <span>Гостиницы</span>
                   </li>
               </ul>
           </nav>
@@ -32,38 +33,51 @@
               </a>
           </div>
       </header>
-      <main>
+      <main class="hotels">
           <div class="search-hotel">
               <form  action="#" method="get"> 
                   <div class="structure"><span class="search-hotel-title">Инфраструктура:</span>
-                      <label>
-                          <input type="checkbox" name="pool" checked>Бассейн
+                      <input type="checkbox" name="pool" checked id="b1">
+                      <label for="b1">Бассейн
                       </label>
-                      <label>
-                          <input type="checkbox" name="parking">Парковка
+                     <input type="checkbox" name="parking" id="p1">
+                      <label for="p1">Парковка
                       </label>
-                      <label>
-                          <input type="checkbox" name="network">Wi-Fi
+                    <input type="checkbox" name="network" id="w1">
+                      <label for="w1">Wi-Fi
                       </label>
                   </div>
                   <div class="type-home">
                       <span class="search-hotel-title">Тип жилья:</span>
-                      <label>
-                          <input type="checkbox" name="hotel" checked>Гостиница
+                      <input type="checkbox" name="hotel" checked id="h1">
+                      <label for="h1">Гостиница</label>
+                      <input type="checkbox" name="motel" checked id="m1">
+                      <label for="m1">Мотель
                       </label>
-                      <label>
-                          <input type="checkbox" name="motel" checked>Мотель
-                      </label>
-                      <label>
-                          <input type="checkbox" name="apart" checked>Апартаменты
+                      <input type="checkbox" name="apart" checked id="a1"><label for="a1">Апартаменты
                       </label>
                   </div>
+                  
                   <div class="cost">
-                      <span class="search-hotel-title">Стоимость в сутки(Р):</span>
-                      <input type="text" name="total" value="" placeholder="от 0">
-                      <input type="text" name="all-total" value="" placeholder="до 3000"> 
-                      <input type="submit" value="Показать">
+                      <span class="search-hotel-cost">Стоимость в сутки (Р):</span>
+                      <div class="price-controls">
+                          <label class="min-price">от
+                              <input type="text" name="min-price" value="0">
+                          </label> 
+                          <label class="max-price">до
+                          <input type="text" name="max-price" value="3000">
+                          </label>
+                      </div>
+                      <div class="cost-controls">
+                          <div class="scale">
+                              <div class="point"></div>
+                          </div>
+                          <div class="cost-toggle cost-toggle-min"></div>
+                          <div class="cost-toggle cost-toggle-max"></div>
+                      </div>
+                      <button class="btn-controls" type="submit">Показать</button>
                   </div>
+                  
               </form>
               </div>  
           <div class="result">
@@ -90,7 +104,8 @@
                           <a class="btn" href="#">Забронировать</a>
                       </div>
                   </div>
-                  <span class="hotel-rating">Рейтинг:8.5</span>
+                  <div class="hotel-rating">
+                  <span>Рейтинг: 8.5</span></div>
               </div>
               <div class="catalog-hotel">
                   <div class="hotel-picture">
@@ -106,7 +121,8 @@
                           <a class="btn" href="#">Забронировать</a>
                       </div>
                   </div>
-                  <span class="hotel-rating">Рейтинг:8.9</span>
+                  <div class="hotel-rating">
+                  <span>Рейтинг: 8.9</span></div>
               </div>
               
                   <div class="catalog-hotel">
@@ -124,7 +140,9 @@
                               <a class="btn" href="#">Забронировать</a>
                           </div>
                       </div>
-                      <span class="hotel-rating">Рейтинг:9.2</span>
+                      <div class="hotel-rating">
+                  <span>Рейтинг: 9.2
+</span></div>
               </div>
           </div>
      </main>
@@ -136,17 +154,15 @@
           </div>
           <div class="footer-name">
               <div class="footer-social">
-                  <a class="footer-social-tw" href="#">Twitter</a>
-                  <a class="footer-social-fb" href="#">Facebook</a>
-                  <a class="footer-social-youtube" href="#">Youtube</a>
+                  <a class="footer-soc tw" href="#">Twitter</a>
+                  <a class="footer-soc fb" href="#">Facebook</a>
+                  <a class="footer-soc youtube" href="#">Youtube</a>
               </div>
           </div>
           <div class="footer-name">
               <div class="footer-copyright">
                   <span class="site">website by</span> 
-                  <a href="https://htmlacademy.ru/intensive/htmlcss">
-                  <img src="img/decor/logo%20html.png" width="113" height="39" alt="htmlacademy">
-                  </a>
+                  <a href="https://htmlacademy.ru/intensive/htmlcss"></a>
               </div>
           </div>
           
