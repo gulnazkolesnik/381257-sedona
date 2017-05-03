@@ -549,25 +549,153 @@ body {
     width: 576px;
     top: 0px;
     left: 310px;
-    background-color: white;
-    padding-top: 56px;
-    padding-right: 59px;
-    padding-bottom: 55px;
-    padding-left: 59px;
-    
-}
-/*
-form .search-form {
-    padding-top: 55px;
+    background-color: #ffffff;
     font-size: 14px;
     font-weight: bold;
     line-height: 26px;
-    display: flex;
-   
-    
+    padding: 56px 59px;
+}
+form .search-form {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 26px;
+    padding: 56px 59px;
     
 }
 
+.search-data {
+    display: flex;
+    width: 460px;
+    height: 46px;
+    margin-bottom: 20px;
+}
+.search-form-data {
+    width: 114px;
+    text-align: left;
+    
+}
+
+.search-form-poisk input {
+    display: inline-block;
+    vertical-align: top;
+    width: 347px;
+    height: 38px;
+    background-color: #f2f2f2;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 26px;
+    text-decoration: none;
+    padding-left: 13px;
+    padding-right: 190px;
+    text-align: left;
+    outline: none;
+    text-transform: uppercase;
+}
+.search-form-poisk {
+    position: relative;
+}
+.search-form-poisk .btn {
+    position: absolute;
+    width: 21px;
+    height: 22px;
+    top: 8px;
+    right: 11px;
+    background: transparent url("../img/decor/sprite.png") no-repeat;
+    background-position: -10px -205px;
+    cursor: pointer;
+}
+.search-form-poisk .btn:hover {
+    background-position: -10px -121px;
+}
+.search-form-poisk .btn:active {
+    background-position: -10px -163px;
+}
+
+.search-people {
+    display: flex;
+    width: 461px;
+    padding-top: 5px;
+}
+.search-data-min {
+    display: flex;
+    width: 229px;
+   
+}
+
+.search-form-min {
+    width: 113px;
+    text-align: left;
+}
+.search-poisk-min {
+    position: relative;
+}
+.search-poisk-min .minus {
+    position: absolute;
+    width: 12px;
+    height: 3px;
+    top: 8px;
+    left: 11px;
+    background: transparent url("../img/decor/sprite.png") no-repeat;
+    background-position: -10px -1078px;
+    cursor: pointer;
+}
+.search-poisk-min input {
+    display: inline-block;
+    vertical-align: top;
+    width: 117px;
+    height: 38px;
+    background-color: #f2f2f2;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 26px;
+    text-decoration: none;
+    padding-left: 53px;
+    padding-right: 55px;
+    text-align: left;
+    outline: none;
+    text-transform: uppercase;
+}
+.search-poisk-min .plus {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    top: 8px;
+    right: 17px;
+    background: transparent url("../img/decor/sprite.png") no-repeat;
+    background-position: -10px -1163px;
+    cursor: pointer;
+}
+.search-form-ch {
+    padding-left: 15px;
+    padding-left: 50px;
+    padding-right: 30px;
+}
+.find {
+    display: block;
+    margin-top: 50px;
+   
+}
+ .find  input{
+     
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    bottom: 0;
+    padding: 20px 194px; 
+    background-color: #81b3d2;
+    color: #ffffff;
+    outline: none;
+    text-transform: uppercase;
+     text-align: center;
+     border: none;
+}
+/*
 .search-form-data {
     width: 115px;
     text-align: left;
@@ -624,7 +752,7 @@ input .find {
     max-width: 119px;
     margin: 0;
 }
-*/
+
 .search-form input:hover {
     background-color: #ebebeb;
     color: black;
@@ -634,7 +762,7 @@ input .find {
     background-color: #ffffff;
     color: black;
     border: 2px solid #e5e5e5;
-}
+}*/
 .main-footer {
     display: flex;
     flex-basis: 1200px;
@@ -953,7 +1081,7 @@ input[type="checkbox"]:checked+label:disabled::before {
 }
 .result-sort {
     display: flex;
-    flex-basis: 909px;
+    flex-basis: 900px;
     justify-content: space-between;
     align-items: baseline;
     padding-right: 504px;
@@ -984,25 +1112,46 @@ input[type="checkbox"]:checked+label:disabled::before {
     
 }
 .arrows-btn {
-    display: block;
-     width: 99px;
+    
+     width: 105px;
     align-items: center;
     min-height: 86px;
+    padding-top: 35px;
 }
 .arrows {
+    display: inline-block;
     width: 11px;
     height: 10px;
     background: transparent url("../img/decor/sprite.png") no-repeat;
+    margin-right: 5px;
+    margin-left: 2px;
 }
-.arrows-down {
-   
-    background-position: -10px -331px;
-        
+.arrows-up.active {
+     background-position: -10px -1410px;
+}
+.arrows-down.active {
+     background-position: -10px -391px; 
 }
 .arrows-up {
-   
     background-position: -10px -1470px;
 }
+.arrows-down {
+    background-position: -10px -331px;  
+}
+.arrows-up:hover {
+    background-position: -10px -1440px;
+}
+.arrows-up:active {
+     background-position: -10px -1410px;
+}
+.arrows-down:hover {
+    background-position: -10px -361px; 
+}
+.arrows-down:active {
+   background-position: -10px -391px; 
+}
+
+
 
 .find-hotel {
     width: 1200px;
@@ -1020,7 +1169,7 @@ input[type="checkbox"]:checked+label:disabled::before {
   
     background-color: white;
     border-bottom: 1px solid #e5e5e5;
-    padding-top: 30px;
+    padding-top: 25px;
     
 }
 .catalog-hotel:last-child {
@@ -1029,27 +1178,36 @@ input[type="checkbox"]:checked+label:disabled::before {
 .hotel-picture {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     width: 209px;
+    padding-top: 4px;
     
    
 }
 
 .catalog-hotel-name {
-    
-    font-size: 14px;
     width: 300px;
     
     padding-left: 32px;
     
 }
 .hotel-title {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
     margin: 0;
-    padding-bottom: 7px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+.hotel-title:hover {
+    color: #81b3d2;
+}
+.hotel-title:active {
+    color: #cacaca;
 }
 .catalog-hotel-name p {
     margin: 0;
-    padding-bottom: 18px;
+    padding-bottom: 17px;
 }
 .hotel-room {
     display: inline-block;
