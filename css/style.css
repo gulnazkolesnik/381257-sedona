@@ -569,13 +569,13 @@ form .search-form {
     height: 46px;
     margin-bottom: 20px;
 }
-.search-form-data {
+.search-data label {
     width: 114px;
     text-align: left;
     
 }
 
-.search-form-poisk input {
+.search-data input {
     display: inline-block;
     vertical-align: top;
     width: 347px;
@@ -594,10 +594,19 @@ form .search-form {
     outline: none;
     text-transform: uppercase;
 }
-.search-form-poisk {
+.search-data input:hover {
+    background-color: #ebebeb;
+    color: #000000;
+}
+.search-data input:focus {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #e5e5e5;
+}
+.search-data {
     position: relative;
 }
-.search-form-poisk .btn {
+.search-data .btn {
     position: absolute;
     width: 21px;
     height: 22px;
@@ -607,10 +616,10 @@ form .search-form {
     background-position: -10px -205px;
     cursor: pointer;
 }
-.search-form-poisk .btn:hover {
+.search-data .btn:hover {
     background-position: -10px -121px;
 }
-.search-form-poisk .btn:active {
+.search-data .btn:active {
     background-position: -10px -163px;
 }
 
@@ -625,29 +634,42 @@ form .search-form {
    
 }
 
-.search-form-min {
+.search-data-min label {
     width: 113px;
     text-align: left;
 }
-.search-poisk-min {
+.search-data-min {
     position: relative;
 }
-.search-poisk-min .minus {
+.search-data-min .minus {
+    display: inline-block;
     position: absolute;
-    width: 12px;
-    height: 3px;
-    top: 8px;
-    left: 11px;
+    width: 36px;
+    height: 20px;
+    top: 17px;
+    left: 130px;
     background: transparent url("../img/decor/sprite.png") no-repeat;
     background-position: -10px -1078px;
     cursor: pointer;
 }
-.search-poisk-min input {
+
+.search-data-min .minus:hover {
+    width: 12px;
+    height: 3px;
+    background-position: -10px -1032px;
+}
+.search-data-min .minus:active {
+    width: 12px;
+    height: 3px;
+    background-position: -10px -1055px;
+}
+.search-data-min input {
     display: inline-block;
     vertical-align: top;
     width: 117px;
     height: 38px;
     background-color: #f2f2f2;
+    background-position: center;
     color: #000000;
     border: none;
     cursor: pointer;
@@ -655,24 +677,46 @@ form .search-form {
     font-weight: bold;
     line-height: 26px;
     text-decoration: none;
-    padding-left: 53px;
-    padding-right: 55px;
-    text-align: left;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
     outline: none;
     text-transform: uppercase;
 }
-.search-poisk-min .plus {
+.search-data-min input:hover {
+    background-color: #ebebeb;
+    color: #000000;
+}
+.search-data-min input:focus {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #e5e5e5;
+}
+.search-data {
+    position: relative;
+}
+.search-data-min .plus {
+    display: inline-block;
     position: absolute;
     width: 11px;
     height: 11px;
-    top: 8px;
-    right: 17px;
+    top: 13px;
+    right: 15px;
     background: transparent url("../img/decor/sprite.png") no-repeat;
     background-position: -10px -1163px;
     cursor: pointer;
 }
-.search-form-ch {
-    padding-left: 15px;
+.search-data-min .plus:hover {
+   width: 11px;
+    height: 11px;
+    background-position: -10px -1101px; 
+}
+.search-data-min .plus:active {
+   width: 11px;
+    height: 11px;
+    background-position: -10px -1132px; 
+}
+.search-data-min:last-child label {
     padding-left: 50px;
     padding-right: 30px;
 }
@@ -682,7 +726,6 @@ form .search-form {
    
 }
  .find  input{
-     
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -692,8 +735,17 @@ form .search-form {
     color: #ffffff;
     outline: none;
     text-transform: uppercase;
-     text-align: center;
-     border: none;
+    text-align: center;
+    border: none;
+     cursor: pointer;
+}
+.find input:hover {
+    background-color: #669ec0;
+    color: #ffffff;
+}
+.find input:active{
+    background-color: #5496bd;
+    color: #94b9d2;
 }
 /*
 .search-form-data {
