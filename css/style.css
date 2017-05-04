@@ -562,7 +562,9 @@ form .search-form {
     padding: 56px 59px;
     
 }
-
+.search-form label {
+    padding-top: 6px;
+}
 .search-data {
     display: flex;
     width: 460px;
@@ -601,7 +603,7 @@ form .search-form {
 .search-data input:focus {
     background-color: #ffffff;
     color: #000000;
-    border: 2px solid #e5e5e5;
+    outline: 2px solid #e5e5e5;
 }
 .search-data {
     position: relative;
@@ -644,24 +646,20 @@ form .search-form {
 .search-data-min .minus {
     display: inline-block;
     position: absolute;
-    width: 36px;
-    height: 20px;
-    top: 17px;
-    left: 130px;
+    width: 38px;
+    height: 38px;
+    top: 0px;
+    right: 78px;
     background: transparent url("../img/decor/sprite.png") no-repeat;
-    background-position: -10px -1078px;
+    background-position: 4px -1060px;
     cursor: pointer;
 }
 
 .search-data-min .minus:hover {
-    width: 12px;
-    height: 3px;
-    background-position: -10px -1032px;
+    background-position: 4px -1014px;
 }
 .search-data-min .minus:active {
-    width: 12px;
-    height: 3px;
-    background-position: -10px -1055px;
+    background-position: 4px -1037px;
 }
 .search-data-min input {
     display: inline-block;
@@ -698,23 +696,19 @@ form .search-form {
 .search-data-min .plus {
     display: inline-block;
     position: absolute;
-    width: 11px;
-    height: 11px;
-    top: 13px;
-    right: 15px;
+    width: 38px;
+    height: 38px;
+    top: 0px;
+    right: 6px;
     background: transparent url("../img/decor/sprite.png") no-repeat;
-    background-position: -10px -1163px;
+    background-position: 4px -1148px;
     cursor: pointer;
 }
 .search-data-min .plus:hover {
-   width: 11px;
-    height: 11px;
-    background-position: -10px -1101px; 
+    background-position: 4px -1085px; 
 }
 .search-data-min .plus:active {
-   width: 11px;
-    height: 11px;
-    background-position: -10px -1132px; 
+    background-position: 4px -1116px; 
 }
 .search-data-min:last-child label {
     padding-left: 50px;
