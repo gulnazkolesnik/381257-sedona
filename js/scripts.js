@@ -1,4 +1,4 @@
-  <script>
+
           var link = document.querySelector(".interest-search");
           var popup = document.querySelector(".search");
           
@@ -8,4 +8,4 @@
                                                           });
           
          
-      </
+     
