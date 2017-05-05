@@ -1031,10 +1031,12 @@ input[type="checkbox"]:checked+label:disabled::before {
     border: 2px solid #ffffff;
     border-radius: 2px;
     cursor: pointer;
+    outline: none;
 }
 .btn-controls:hover {
     color: #000000;
     background: #ffffff;
+    outline: none;
 }
 .result {
     display: flex;
@@ -1284,5 +1286,10 @@ input[type="checkbox"]:checked+label:disabled::before {
     height: 17px;
     background-position: -10px -10px;
 }
+.search-close {
+    display: none;
+}
 
-
+/*.popup {
+    display: none;
+}*/
