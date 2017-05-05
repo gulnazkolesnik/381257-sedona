@@ -114,6 +114,7 @@
               </div>
         
           <div class= "map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d836875.2072877929!2d-112.083943603125!3d34.98056814070208!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1494008243405" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             <div class="search">
 
               <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -159,6 +160,7 @@
                       </div>
               </form>
               </div> 
+              
           </div>
       </main>
       
@@ -185,12 +187,13 @@
           </footer>
       </div>
       <script>
-          var link = document.querySelector(".interest-search")
+          var link = document.querySelector(".interest-search");
           var popup = document.querySelector(".search");
           
+          popup.classList.add("search-close");
           link.addEventListener("click", function (event) { event.preventDefault();
-           popup.classList.toggle("search-close");
-                                                        });
+          popup.classList.toggle("search-close");
+                                                          });
           
          
       </script>

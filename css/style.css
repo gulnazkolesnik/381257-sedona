@@ -308,6 +308,8 @@ body {
    
 }
 .main-navigation a {
+    background-color: #ffffff;
+    color: #000000;
     text-decoration: none;
    
 }
@@ -1290,6 +1292,4 @@ input[type="checkbox"]:checked+label:disabled::before {
     display: none;
 }
 
-/*.popup {
-    display: none;
-}*/
+
