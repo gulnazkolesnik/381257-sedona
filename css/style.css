@@ -286,7 +286,7 @@ body {
     width: 20%;
     min-height: 57px;
     list-style: none;
-    padding-top: 16px;
+    padding-top: 14px;
     
 }
 .main-navigation li:nth-child(1) {
@@ -301,7 +301,7 @@ body {
 .main-navigation li:nth-child(3) {
     text-align: right;
     margin-right: auto;
-    margin-left: 110px;
+    margin-left: 116px;
 }
 .main-navigation li:nth-child(4) {
     text-align: right;
@@ -347,7 +347,7 @@ body {
     }
 .info-city {
     padding-top: 60px;
-    padding-bottom: 30px;
+    padding-bottom: 26px;
     padding-left: 300px;
     padding-right: 300px;   
 }
@@ -388,7 +388,13 @@ body {
     padding-top: 27px;
     padding-left: 100px;
     padding-right: 100px;
-    padding-bottom: 27px;
+    padding-bottom: 25px;
+}
+.features-two .features-name {
+    padding-top: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 25px;
 }
 .features-number {
     font-size: 14px;
@@ -402,6 +408,9 @@ body {
     font-weight: normal;
     padding-left: 35px;
     padding-right: 35px;
+    margin-top: 20px;
+}
+.features-two p{
     margin-top: 20px;
 }
 
@@ -420,9 +429,8 @@ body {
     position: relative;
     width: 400px;
     min-height: 330px; 
-    padding-top: 144px;
-    padding-left: 164px;
-    padding-left: 55px;
+    padding-top: 142px;
+    padding-left: 50px;
     padding-right: 50px;
 }
 .info-tourist-title {
@@ -458,8 +466,8 @@ body {
 .souvenirs::before {
     content: "";
     position: absolute;
-    top: 61px;
-    left: 164px;
+    top: 55px;
+    left: 168px;
     width: 64px;
     height: 76px;
     background-position: -10px -1244px;
@@ -485,7 +493,17 @@ body {
     color: #333333;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 20px;
+    padding-top: 18px;
+}
+.features-item .features-name {
+    display: block;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+    padding-top: 28px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 25px;
 }
 .features-item .features-name {
     color: #000000;
@@ -511,7 +529,7 @@ body {
     padding-left: 370px;
     padding-right: 370px;
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 }
 .interest-title {
     font-size: 30px;
@@ -532,6 +550,7 @@ body {
     background-color: #766357;
     color: #ffffff;
     padding: 30px 140px;
+    padding-bottom: 38px;
     margin-bottom: 0;
     border: none;
     cursor: pointer;
@@ -548,14 +567,27 @@ body {
 .search {
     position: absolute;
     min-height: 398px;
-    width: 576px;
+    width: 571px;
     top: 0px;
-    left: 310px;
+    left: 314px;
     font-size: 14px;
     font-weight: bold;
     line-height: 26px;
     background-color: #ffffff;
-    padding: 56px 59px;
+    padding: 52px 59px;
+    animation-name: amount;
+    animation-duration: 1.5s;
+ 
+}
+
+@keyframes amount {
+    0% {
+        transform: translateY(0%);
+        opacity: 0;
+    };
+    100% {transform: translateY(100%);
+        opacity: 1;   
+    }
 }
 form .search-form {
     font-size: 14px;
@@ -584,6 +616,7 @@ form .search-form {
     vertical-align: top;
     width: 347px;
     height: 38px;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: bold;
     line-height: 26px;
@@ -592,7 +625,7 @@ form .search-form {
     border: none;
     cursor: pointer;
     text-decoration: none;
-    padding-left: 13px;
+    padding-left: 10px;
     padding-right: 190px;
     text-align: left;
     outline: none;
@@ -630,7 +663,7 @@ form .search-form {
 .search-people {
     display: flex;
     width: 461px;
-    padding-top: 5px;
+    padding-top: 2px;
 }
 .search-data-min {
     display: flex;
@@ -651,7 +684,7 @@ form .search-form {
     width: 38px;
     height: 38px;
     top: 0px;
-    right: 78px;
+    right: 79px;
     background: transparent url("../img/decor/sprite.png") no-repeat;
     background-position: 4px -1060px;
     cursor: pointer;
@@ -677,7 +710,7 @@ form .search-form {
     font-weight: bold;
     line-height: 26px;
     text-decoration: none;
-    padding-left: 40px;
+    padding-left: 38px;
     padding-right: 40px;
     text-align: center;
     outline: none;
@@ -701,7 +734,7 @@ form .search-form {
     width: 38px;
     height: 38px;
     top: 0px;
-    right: 6px;
+    right: 2px;
     background: transparent url("../img/decor/sprite.png") no-repeat;
     background-position: 4px -1148px;
     cursor: pointer;
@@ -718,15 +751,16 @@ form .search-form {
 }
 .find {
     display: block;
-    margin-top: 50px;
+    margin-top: 53px;
    
 }
  .find  input{
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
     bottom: 0;
-    padding: 20px 194px; 
+    padding: 15px 195px; 
     background-color: #81b3d2;
     color: #ffffff;
     outline: none;
@@ -746,6 +780,7 @@ form .search-form {
 .main-footer {
     display: flex;
     flex-basis: 1200px;
+    height: 120px;
     background-color: rgba(253, 253, 252, 0.8);
     position: relative;
     margin-top: -120px;
@@ -754,7 +789,8 @@ form .search-form {
 .main-footer.hotel{
     position: static;
     margin: 0;
-     background-color: #fefefe;
+    padding-top: 8px;
+    background-color: #fefefe;
 }
 .footer-name {
     width: 400px;
@@ -769,13 +805,13 @@ form .search-form {
 }
 .footer-insta {
     padding-left: 133.5px;
-    padding-top: 51.5px;
+    padding-top: 39px;
     padding-bottom: 49.5px;
     padding-right: 129.5px;
 }
 .footer-social {
     text-align: center;
-    padding-top: 39px;
+    padding-top: 28px;
     padding-bottom: 35px;
     
       
@@ -837,14 +873,14 @@ form .search-form {
     font-size: 14px;
     line-height: 26px;
     font-weight: normal;
-    padding-top: 45px;
+    padding-top: 38px;
     padding-right: 120px;
     
 }
 .footer-copyright a::after {
     content: "";
     position: absolute;
-    top: 40px;
+    top: 35px;
     right: 100px;
     width: 113px;
     height: 39px;
@@ -864,12 +900,12 @@ form .search-form {
     font-weight: normal;
     color: #ffffff;
     width: 1200px;
-    min-height: 219px;
+    min-height: 217px;
     background-image: url(../img/background/background_hotels.jpg);
     background-color: #3a4851;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-     padding-top: 30px;
+    padding-top: 27px;
     
 }
 .search-hotel-title {
@@ -885,7 +921,7 @@ form .search-form {
     display: flex;
     flex-direction: column;
     width: 313px;
-    padding-left: 75px;
+    padding-left: 72px;
     padding-right: 101px;
    
 }
@@ -894,7 +930,11 @@ input[type="checkbox"] {
 }
 input[type="checkbox"]+label {
     display: block;
-    margin: 16px 0;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    margin-top: 24px;
     padding-left: 39px;
     cursor: pointer;
     position: relative;
@@ -926,35 +966,38 @@ input[type="checkbox"]+label:disabled::before {
 input[type="checkbox"]:checked+label:disabled::before {
       background-position: -10px -289px;
 }
-
+ 
 .type-home {
     display: flex;
     flex-direction: column;
     width: 287px;
-    padding-left: 15px;
+    padding-left: 17px;
    
+}
+.type-home input[type="checkbox"]+label {
+    padding-left: 42px;
 }
 .search-hotel-cost {
     margin-bottom: 9px;
     font-weight: 600;
-  font-size: 16px;
-  line-height: 21px;
+    font-size: 16px;
+    line-height: 21px;
 }
 
 .cost {
     box-sizing: content-box;
     width: 330px; 
-    padding-left: 211px;
+    padding-left: 229px;
     padding-right: 73px;
 }
 .price-controls {
     position: relative;
     height: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
     border: 2px solid #ffffff;
     border-radius: 2px;
     font-size: 0;
-    margin-top: 9px;
+    margin-top: 8px;
 }
 .price-controls::after {
     content: "";
@@ -974,11 +1017,12 @@ input[type="checkbox"]:checked+label:disabled::before {
   vertical-align: top;
   cursor: pointer;
 }
-.price-controls .min-price,
-.price-controls .max-price {
-  padding-left: 67px;
+.price-controls .min-price {
+  padding-left: 62px;
 }
-
+.price-controls .max-price {
+  padding-left: 76px;
+}
 .price-controls input {
   width: 50px;
   padding: 0;
@@ -1023,7 +1067,7 @@ input[type="checkbox"]:checked+label:disabled::before {
 }
 .btn-controls {
     display: block;
-    margin: 0 auto;
+    margin-left: 83px;
     padding: 6px 30px;
     font-size: 14px;
     line-height: 20px;
@@ -1045,7 +1089,7 @@ input[type="checkbox"]:checked+label:disabled::before {
     margin: 0;
     width: 1200px;
     justify-content: flex-start;
-    padding-left: 75px;
+    padding-left: 72px;
     align-items: center;
     min-height: 86px;
     font-size: 12px;
@@ -1059,13 +1103,15 @@ input[type="checkbox"]:checked+label:disabled::before {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
+    margin: 0;
+    padding-bottom: 3px;
 }
 .result-sort {
     display: flex;
     flex-basis: 900px;
     justify-content: space-between;
     align-items: baseline;
-    padding-right: 504px;
+    padding-right: 500px;
     padding-left: 48px;
     
     
@@ -1081,6 +1127,7 @@ input[type="checkbox"]:checked+label:disabled::before {
 .result-sort span.active {
     color: #81b3d2;
     border: none;
+    padding-left: 5px;
 }
 .result-sort-type:hover {
    color: #81b3d2;
@@ -1104,8 +1151,8 @@ input[type="checkbox"]:checked+label:disabled::before {
     width: 11px;
     height: 10px;
     background: transparent url("../img/decor/sprite.png") no-repeat;
-    margin-right: 5px;
-    margin-left: 2px;
+    margin-right: 8px;
+    margin-left: 3px;
 }
 .arrows-up.active {
      background-position: -10px -1410px;
@@ -1198,7 +1245,7 @@ input[type="checkbox"]:checked+label:disabled::before {
 }
 .hotel-room {
     display: inline-block;
-    width: 115px; 
+    width: 112px; 
     padding: 0;
 }
 
@@ -1253,7 +1300,7 @@ input[type="checkbox"]:checked+label:disabled::before {
     width: 705px;
     text-align: right;
     padding-right: 70px;
-    padding-top: 65px;
+    padding-top: 70px;
     
 }
 .hotel-rating span {
