@@ -106,10 +106,8 @@ body {
     width: 1200px;
     height: 508px;
     padding-top: 73px;
-    background-image: url(../img/background/SEDONA_BACK.jpg);
-    background-color: #467da6;
-    background-position: 50% 100%;
-    background-repeat: no-repeat;
+    background: url(../img/background/Sedona_mask.png) 50% 100% no-repeat, url(../img/background/Sedona_main.jpg) 50% 22% no-repeat;
+    background-color: #a78076;
 }
 .info {
     width: 1200px;
@@ -345,8 +343,8 @@ body {
     line-height: 26px;
     background-color: #ffffff;
     padding: 52px 58px;
-    -webkit-box-shadow: 0 5px 6px 4px rgba(225, 224, 222, 0.4);
-    box-shadow: 0 5px 6px 4px rgba(225, 224, 222, 0.4);
+    -webkit-box-shadow: 0 4px 6px 4px rgba(225, 224, 222, 0.5);
+    box-shadow: 0 4px 6px 4px rgba(225, 224, 222, 0.5);
     -webkit-animation-name: amount;
     animation-name: amount;
     -webkit-animation-duration: 1.5s;
@@ -438,6 +436,7 @@ form .search-form {
     height: 22px;
     top: 8px;
     right: 11px;
+    font-size: 0;
     background: transparent url("../img/decor/sprite.png") no-repeat;
     background-position: -10px -205px;
     cursor: pointer;
@@ -477,6 +476,7 @@ form .search-form {
     height: 38px;
     top: 0px;
     right: 79px;
+    font-size: 0;
     background: transparent url("../img/decor/sprite.png") no-repeat;
     background-position: 4px -1060px;
     cursor: pointer;
@@ -528,6 +528,7 @@ form .search-form {
     height: 38px;
     top: 0px;
     right: 2px;
+    font-size: 0;
     background: transparent url("../img/decor/sprite.png") no-repeat;
     background-position: 4px -1149px;
     cursor: pointer;
@@ -584,7 +585,10 @@ form .search-form {
     position: static;
     margin: 0;
     background-color: #fefefe;
+    padding-top: 0;
+    
 }
+
 .footer-name {
     width: 400px;
     min-height: 120px;
@@ -662,8 +666,17 @@ form .search-form {
     font-size: 14px;
     line-height: 26px;
     font-weight: normal;
+    text-align: center;
     padding-top: 45px;
     padding-right: 120px;
+   
+}
+
+.footer-copyright a{
+    display: block;
+    font-size: 0;
+     width: 113px;
+    height: 39px;
 }
 .footer-copyright a::after {
     content: "";
@@ -969,6 +982,7 @@ form .search-form {
     vertical-align: top;
     width: 11px;
     height: 10px;
+    font-size: 0;
     background: transparent url("../img/decor/sprite.png") no-repeat;
     margin-right: 8px;
     margin-top: 5px;
