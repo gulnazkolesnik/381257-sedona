@@ -53,6 +53,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     -webkit-box-pack: justify;
@@ -65,20 +67,20 @@ body {
     list-style: none;
     padding-top: 14px;
 }
-.main-navigation li:nth-child(1) {
+.main-navigation li:nth-child(4n+1) {
     text-align: left;
 }
-.main-navigation li:nth-child(2) {
+.main-navigation li:nth-child(4n+2) {
     text-align: left;
     margin-right: auto;
     margin-left: 29px;
 }
-.main-navigation li:nth-child(3) {
+.main-navigation li:nth-child(4n+3) {
     text-align: right;
     margin-right: auto;
     margin-left: 116px;
 }
-.main-navigation li:nth-child(4) {
+.main-navigation li:nth-child(4n+4) {
     text-align: right;
 }
 .main-navigation a {
@@ -191,6 +193,11 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     background-color: #ffffff;
     color: #333333;
 }
@@ -255,7 +262,7 @@ body {
 }
 .features-item {
     width: 400px;
-    height: 257px;
+    min-height: 257px;
     background-color: #eeeeee;
     color: #333333;
     padding-left: 50px;
@@ -576,7 +583,7 @@ form .search-form {
     display: flex;
     -ms-flex-preferred-size: 1200px;
     flex-basis: 1200px;
-    height: 120px;
+    min-height: 120px;
     background-color: rgba(253, 253, 252, 0.8);
     position: relative;
     margin-top: -120px;
@@ -586,9 +593,7 @@ form .search-form {
     margin: 0;
     background-color: #fefefe;
     padding-top: 0;
-    
 }
-
 .footer-name {
     width: 400px;
     min-height: 120px;
@@ -601,6 +606,7 @@ form .search-form {
     text-decoration: none;
 }
 .footer-insta {
+    min-height: 120px;
     padding-left: 133.5px;
     padding-top: 45px;
     padding-bottom: 49.5px;
@@ -616,7 +622,7 @@ form .search-form {
     vertical-align: top;
     position: relative;
     width: 46px;
-    height: 48px;
+    min-height: 48px;
     font-size: 0;
     background-color: #81b3d2;
 }
@@ -669,20 +675,21 @@ form .search-form {
     text-align: center;
     padding-top: 45px;
     padding-right: 120px;
-   
 }
-
-.footer-copyright a{
+.footer-copyright a {
+    position: absolute;
+    top: 39px;
+    right: 101px;
     display: block;
     font-size: 0;
-     width: 113px;
+    width: 113px;
     height: 39px;
 }
 .footer-copyright a::after {
     content: "";
     position: absolute;
-    top: 39px;
-    right: 101px;
+    top: 0;
+    right: 0;
     width: 113px;
     height: 39px;
     background: transparent url("../img/decor/sprite.png") no-repeat;
