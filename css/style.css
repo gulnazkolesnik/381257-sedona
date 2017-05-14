@@ -614,6 +614,7 @@ form .search-form {
 }
 .footer-social {
     text-align: center;
+    font-size: 0;
     padding-top: 35px;
     padding-bottom: 35px;
 }
@@ -625,6 +626,10 @@ form .search-form {
     min-height: 48px;
     font-size: 0;
     background-color: #81b3d2;
+    margin-right: 5px;
+}
+.footer-soc:last-child {
+    margin-right: 0;
 }
 .footer-soc:hover {
     background-color: #669ec0;
